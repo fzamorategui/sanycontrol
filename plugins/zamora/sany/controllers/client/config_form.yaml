@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Client
+
+# Model Form Field configuration
+form: $/zamora/sany/models/client/fields.yaml
+
+# Model Class name
+modelClass: Zamora\Sany\Models\Client
+
+# Default redirect location
+defaultRedirect: zamora/sany/client
+
+# Create page
+create:
+    title: Create Client
+    redirect: zamora/sany/client/update/:id
+    redirectClose: zamora/sany/client
+
+# Update page
+update:
+    title: Edit Client
+    redirect: zamora/sany/client
+    redirectClose: zamora/sany/client
+
+# Preview page
+preview:
+    title: Preview Client

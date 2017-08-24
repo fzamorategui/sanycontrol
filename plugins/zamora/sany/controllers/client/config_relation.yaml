@@ -1,0 +1,8 @@
+locations:
+    label: Ubicaciones
+    view:
+      list: $/zamora/sany/models/location/columns.yaml
+      toolbarButtons: create|delete
+    manage:
+      form: $/zamora/sany/models/location/fields.yaml
+      recordsPerPage: 10

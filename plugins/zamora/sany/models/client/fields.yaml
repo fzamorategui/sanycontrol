@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  nombre:
+    label: Nombre o Razón Social
+  rfc:
+      label: RFC
+      span: left
+  telefonos:
+    label: Telefonos
+    type: repeater
+    prompt: Agregar nuevo teléfono
+    form:
+      fields:
+        telefono:
+          label: Teléfono
+          span: left
+        ext:
+          label: Ext.
+          span: right
+  locations:
+    label: Ubicaciones
+    type: partial
+    tab: Ubicaciones
+    path: ~/plugins/zamora/sany/controllers/client/_locations.htm

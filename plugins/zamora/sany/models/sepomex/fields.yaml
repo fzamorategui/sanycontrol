@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  description:
+    label: Descripción
+    type: textarea
+  base:
+    label: Base SEPOMEX
+    type: fileupload
+    mode: file
+    fileTypes: xls
