@@ -1,0 +1,40 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  nombre:
+    label: Nombre
+    span: left
+  calle:
+    label: Calle
+  num_ext:
+    label: Número Exterior
+    span: left
+  num_int:
+    label: Número Interior
+    span: right
+  cp:
+    label: Código Postal
+    span: left
+  colonia:
+    label: Colonia
+    span: right
+    type: dropdown
+    dependsOn: cp
+  delegacion:
+    label: Delegación/Municipio
+    dependsOn: cp
+    span: left
+    readOnly: true
+  estado:
+    label: Estado
+    dependsOn: cp
+    span: right
+    readOnly: true
+  calle1:
+    label: Entre calle
+    span: left
+  calle2:
+    label: Y
+    span: right

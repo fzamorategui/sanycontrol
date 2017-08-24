@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Sepomex
+
+# Model Form Field configuration
+form: $/zamora/sany/models/sepomex/fields.yaml
+
+# Model Class name
+modelClass: Zamora\Sany\Models\Sepomex
+
+# Default redirect location
+defaultRedirect: zamora/sany/sepomex
+
+# Create page
+create:
+    title: Create Sepomex
+    redirect: zamora/sany/sepomex/update/:id
+    redirectClose: zamora/sany/sepomex
+
+# Update page
+update:
+    title: Edit Sepomex
+    redirect: zamora/sany/sepomex
+    redirectClose: zamora/sany/sepomex
+
+# Preview page
+preview:
+    title: Preview Sepomex

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Location
+
+# Model Form Field configuration
+form: $/zamora/sany/models/location/fields.yaml
+
+# Model Class name
+modelClass: Zamora\Sany\Models\Location
+
+# Default redirect location
+defaultRedirect: zamora/sany/location
+
+# Create page
+create:
+    title: Create Location
+    redirect: zamora/sany/location/update/:id
+    redirectClose: zamora/sany/location
+
+# Update page
+update:
+    title: Edit Location
+    redirect: zamora/sany/location
+    redirectClose: zamora/sany/location
+
+# Preview page
+preview:
+    title: Preview Location

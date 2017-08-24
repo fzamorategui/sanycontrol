@@ -1,0 +1,8 @@
+1.0.1: First version of Sany
+1.0.2:
+    - Se crean tablas
+    - create_clients_table.php
+    - create_locations_table.php
+    - create_sepomexes_table.php
+    - create_sepomex_cp_table.php
+    - create_services_table.php

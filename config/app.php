@@ -112,10 +112,8 @@ return [
     */
 
     'providers' => array_merge(include(base_path('modules/system/providers.php')), [
-
-        // 'Illuminate\Html\HtmlServiceProvider', // Example
-
         'System\ServiceProvider',
+        'Maatwebsite\Excel\ExcelServiceProvider'
     ]),
 
     /*
@@ -130,9 +128,7 @@ return [
     */
 
     'aliases' => array_merge(include(base_path('modules/system/aliases.php')), [
-
-        // 'Str' => 'Illuminate\Support\Str', // Example
-
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class
     ]),
 
 ];

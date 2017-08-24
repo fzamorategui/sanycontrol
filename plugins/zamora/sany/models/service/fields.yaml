@@ -1,0 +1,87 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  client:
+    label: Cliente
+    type: relation
+    span: left
+    select: nombre
+    emptyOption: -- Selecciona --
+  location:
+    label: Ubicación
+    type: dropdown
+    span: right
+    dependsOn: client
+  fecha_inicio:
+    label: Fecha de Inicio
+    span: left
+    type: datepicker
+    mode: date
+  fecha_termino:
+    label: Fecha de Termino
+    span: right
+    type: datepicker
+    mode: date
+tabs:
+  fields:
+    plaga:
+      label: Tipo de plaga
+      type: checkboxlist
+      span: left
+      tab: Tipo de plaga
+      options:
+        ratas: Ratas
+        ratones: Ratones
+        moscas: Moscas
+        hormigas: Hormigas
+    otra_plaga:
+      tab: Tipo de plaga
+      label: Otras plagas
+    otro_servicio:
+      label: Otro servicio
+      tab: Tipo de plaga
+    productos:
+      label: Productos utilizados
+      type: repeater
+      tab: Productos Utilizados
+      prompt: Agregar otro producto
+      form:
+        fields:
+          activo:
+           label: Ingrediente activo
+          quimico:
+            label: Tipo químico
+          concentracion:
+            label: Concentración final
+    costo:
+      label: Costo de operación
+      tab: Detalles
+    numero_servicio:
+      label: Número de Servicio
+      span: left
+      tab: Detalles
+    total_servicios:
+      label: Total de Servicios
+      span: right
+      tab: Detalles
+    proximo_servicio:
+      label: Próximo servicio recomendado
+      type: datepicker
+      mode: date
+      tab: Detalles
+    areas:
+      label: Área(s) tratada(s)
+      type: textarea
+      tab: Detalles
+    observaciones:
+      label: Observaciones
+      type: textarea
+      tab: Detalles
+    responsable:
+      label: Responsable del área
+      tab: Detalles
+    tecnico:
+      label: Técnico aplicador
+      tab: Detalles
