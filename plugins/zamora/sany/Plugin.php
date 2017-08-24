@@ -16,10 +16,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Sany',
+            'name' => 'Sany',
             'description' => 'No description provided yet...',
-            'author'      => 'Zamora',
-            'icon'        => 'icon-leaf'
+            'author' => 'Zamora',
+            'icon' => 'icon-leaf'
         ];
     }
 
@@ -83,12 +83,28 @@ class Plugin extends PluginBase
     {
         return [
             'sany' => [
-                'label'       => 'Clientes',
-                'url'         => Backend::url('zamora/sany/client'),
-                'icon'        => 'icon-user',
+                'label' => 'Clientes',
+                'url' => Backend::url('zamora/sany/client'),
+                'icon' => 'icon-user',
                 'permissions' => ['zamora.sany.*'],
-                'order'       => 500,
-            ],
+                'order' => 500,
+                'sideMenu' => [
+                    'client' => [
+                        'label' => 'Clientes',
+                        'url' => Backend::url('zamora/sany/client'),
+                        'icon' => 'icon-user',
+                        'permissions' => ['zamora.sany.*'],
+                        'order' => 500,
+                    ],
+                    'service' => [
+                        'label' => 'Servicios',
+                        'url' => Backend::url('zamora/sany/service'),
+                        'icon' => 'icon-exclamation-triangle',
+                        'permissions' => ['zamora.sany.*'],
+                        'order' => 500,
+                    ]
+                ],
+            ]
         ];
     }
 
@@ -96,12 +112,12 @@ class Plugin extends PluginBase
     {
         return [
             'sepomex' => [
-                'label'       => 'Base SEPOMEX',
+                'label' => 'Base SEPOMEX',
                 'description' => 'Administra y carga base de SEPOMEX',
-                'category'    => 'SEPOMEX',
-                'icon'        => 'icon-globe',
-                'url'         => Backend::url('zamora/sany/sepomex'),
-                'order'       => 500,
+                'category' => 'SEPOMEX',
+                'icon' => 'icon-globe',
+                'url' => Backend::url('zamora/sany/sepomex'),
+                'order' => 500,
             ]
         ];
     }

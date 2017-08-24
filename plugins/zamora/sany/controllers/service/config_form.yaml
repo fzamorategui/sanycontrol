@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Service
+
+# Model Form Field configuration
+form: $/zamora/sany/models/service/fields.yaml
+
+# Model Class name
+modelClass: Zamora\Sany\Models\Service
+
+# Default redirect location
+defaultRedirect: zamora/sany/service
+
+# Create page
+create:
+    title: Create Service
+    redirect: zamora/sany/service/update/:id
+    redirectClose: zamora/sany/service
+
+# Update page
+update:
+    title: Edit Service
+    redirect: zamora/sany/service
+    redirectClose: zamora/sany/service
+
+# Preview page
+preview:
+    title: Preview Service

@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    client:
+      label: Cliente
+      searchable: true
+      relation: client
+      select: nombre
+    location:
+      label: Ubicación
+      searchable: true
+      relation: location
+      select: nombre
+    numero_servicio:
+      label: Número de Servicio

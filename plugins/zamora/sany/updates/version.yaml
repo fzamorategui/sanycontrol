@@ -5,3 +5,4 @@
     - create_locations_table.php
     - create_sepomexes_table.php
     - create_sepomex_cp_table.php
+    - create_services_table.php
