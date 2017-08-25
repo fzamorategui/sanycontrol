@@ -26,7 +26,7 @@ class CreateServicesTable extends Migration
             $table->text('areas')->nullable();
             $table->text('observaciones')->nullable();
             $table->text('responsable')->nullable();
-            $table->text('tecnico')->nullable();
+            $table->text('tecnico_id')->nullable();
             $table->timestamps();
         });
     }

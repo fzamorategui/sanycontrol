@@ -18,3 +18,7 @@ columns:
       select: nombre
     numero_servicio:
       label: Número de Servicio
+    tecnico:
+      label: Técnico aplicador
+      relation: tecnico
+      select: nombre

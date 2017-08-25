@@ -85,3 +85,6 @@ tabs:
     tecnico:
       label: Técnico aplicador
       tab: Detalles
+      type: relation
+      emptyOption: -- Selecciona --
+      select: concat(nombre,' ',a_paterno)

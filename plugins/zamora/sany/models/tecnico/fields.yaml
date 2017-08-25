@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  nombre:
+    label: Nombre
+    span: left
+  a_paterno:
+    label: Apellido paterno
+    span: left
+  a_materno:
+    label: Apellido materno
+    span: left
+  numero_empleado:
+    label: Número de empleado
+    span: left
+  direccion:
+    label: Dirección
+    type: textarea
+
+
+

@@ -102,6 +102,13 @@ class Plugin extends PluginBase
                         'icon' => 'icon-exclamation-triangle',
                         'permissions' => ['zamora.sany.*'],
                         'order' => 500,
+                    ],
+                    'tecnico' => [
+                        'label' => 'Técnicos',
+                        'url' => Backend::url('zamora/sany/tecnico'),
+                        'icon' => 'icon-cogs',
+                        'permissions' => ['zamora.sany.*'],
+                        'order' => 500,
                     ]
                 ],
             ]
