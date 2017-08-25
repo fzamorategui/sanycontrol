@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Tecnico
+
+# Model Form Field configuration
+form: $/zamora/sany/models/tecnico/fields.yaml
+
+# Model Class name
+modelClass: Zamora\Sany\Models\Tecnico
+
+# Default redirect location
+defaultRedirect: zamora/sany/tecnico
+
+# Create page
+create:
+    title: Create Tecnico
+    redirect: zamora/sany/tecnico/update/:id
+    redirectClose: zamora/sany/tecnico
+
+# Update page
+update:
+    title: Edit Tecnico
+    redirect: zamora/sany/tecnico
+    redirectClose: zamora/sany/tecnico
+
+# Preview page
+preview:
+    title: Preview Tecnico

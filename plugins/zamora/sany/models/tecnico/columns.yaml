@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    all_name:
+        label: Nombre
+        searchable: true
+    numero_empleado:
+        label: Número de Empleado

@@ -26,7 +26,7 @@ class Service extends Model
      */
     protected $fillable = [];
 
-    protected $jsonable = ['productos','plaga'];
+    protected $jsonable = ['productos', 'plaga'];
 
     public $rules = [
         'client' => 'required',
@@ -48,7 +48,8 @@ class Service extends Model
     public $hasMany = [];
     public $belongsTo = [
         'client' => ['Zamora\Sany\Models\Client'],
-        'location' => ['Zamora\Sany\Models\Location']
+        'location' => ['Zamora\Sany\Models\Location'],
+        'tecnico' => ['Zamora\Sany\Models\Tecnico']
     ];
     public $belongsToMany = [];
     public $morphTo = [];
