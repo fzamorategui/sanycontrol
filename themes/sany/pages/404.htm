@@ -1,10 +1,9 @@
-title = "Page not found (404)"
+title = "Page Not Found (404)"
 url = "/404"
 layout = "default"
 ==
-<div class="jumbotron">
-    <div class="container">
-        <h1>Page not found</h1>
-        <p>We're sorry, but the page you requested cannot be found.</p>
-    </div>
-</div>
+    <section id="error" class="container text-center">
+        <h1>404, Page Not Found</h1>
+        <p>The page you are looking for doesn't exist or another error occurred.</p>
+        <a class="btn btn-primary" href="{{ 'home'|page }}">GO BACK TO THE HOMEPAGE</a>
+    </section><!--/#error-->

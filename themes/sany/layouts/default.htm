@@ -1,43 +1,61 @@
-description = "Default layout"
+description = "Default Layout"
 ==
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>October CMS - {{ this.page.title }}</title>
-        <meta name="description" content="{{ this.page.meta_description }}">
-        <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="OctoberCMS">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="generator" content="OctoberCMS">
-        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
-        {% styles %}
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ this.page.meta_description }}">
+	<meta name="keywords" content="{{ this.page.meta_keywords }}">
+    <meta name="author" content="{{ this.page.meta_author }}">
+    <title>SanyControl</title>
+	
+	<!-- core CSS -->
+	{% styles %}
+	<link href="{{ ['assets/css/bootstrap.min.css',
+		'assets/css/font-awesome.min.css',
+		'assets/css/animate.min.css',
+		'assets/css/prettyPhoto.css',
+		'assets/css/main.css',
+		'assets/css/responsive.css',
+	]|theme }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ 'assets/images/ico/favicon.ico'|theme }}">
+    <link rel="icon" href="{{ 'assets/images/ico/sanycontrol.png'|theme }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ 'assets/images/ico/apple-touch-icon-144-precomposed.png'|theme }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ 'assets/images/ico/apple-touch-icon-114-precomposed.png'|theme }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ 'assets/images/ico/apple-touch-icon-72-precomposed.png'|theme }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ 'assets/images/ico/apple-touch-icon-57-precomposed.png'|theme }}">
+</head><!--/head-->
 
-        <!-- Header -->
-        <header id="layout-header">
-            {% partial 'site/header' %}
-        </header>
+<body class="homepage">
 
-        <!-- Content -->
-        <section id="layout-content">
-            {% page %}
-        </section>
+<header id="header">
+		{% partial "top" %}
+        {% partial "nav" %}
+</header><!--/header-->
 
-        <!-- Footer -->
-        <footer id="layout-footer">
-            {% partial 'site/footer' %}
-        </footer>
+    {% page %}
 
-        <!-- Scripts -->
-        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
-        {% framework extras %}
-        {% scripts %}
+<section id="bottom">
+	{% partial "bottom" %}
+</section><!--/#bottom-->
 
-    </body>
+<footer id="footer" class="midnight-blue">
+	{% partial "footer" %}
+</footer><!--/#footer-->
+
+<!-- Scripts -->
+<script type="text/javascript" src="{{ 'assets/js/html5shiv.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/respond.min.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/jquery.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/jquery.prettyPhoto.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/jquery.isotope.min.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/main.js'|theme }}"></script>
+<script type="text/javascript" src="{{ 'assets/js/wow.min.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}             
+         
+</body>
 </html>
