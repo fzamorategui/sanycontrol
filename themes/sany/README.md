@@ -1,55 +1,51 @@
-Demo Theme
-==========
+Corlate
+=======
 
-OctoberCMS demo theme that demonstrates the basic core functionality and utilizes the accompanying demo plugin. It is a great theme to copy when building a site from scratch. 
+![Screenshot](https://raw.githubusercontent.com/jtherczeg/corlate-theme/master/assets/images/theme-preview.png)
 
-The theme acts as a reference implementation for default component markup when distributing plugins.
+Corlate is a free, responsive, Bootstrap 3 powered theme for corporate websites, adapted from JoomShaper's popular HTML template for OctoberCMS, without any built-in 3rd party extensions.
 
-Have fun!
+Features
+--------
+* Responsive design
+* High overall quality
+* Lightweight and very fast
+* CSS3 animations
+* Bootstrap carousel sliders
+* Shortcodes for easily creating tabs, accordions, pricing tables or galleries
 
-## Clean up instructions
+Included Sample Pages
+---------------------
+* Services
+* Portfolio
+* Blog
+* Blog item
+* About Us
+* Contact Us with Google Maps geolocation
+* Pricing table
+* Shortcodes
+* Custom 404 and error pages
 
-If you clone this theme to use as a starting point. You may follow these instructions to clean up:
+Enhancements
+--------------
+* Reorganized folder structure for OctoberCMS
+* Additional metadata included
+* Copyright year displayed with variable
+* Page and CSS added for maintenance mode
+* Easy site name replacement with a custom one in the back-end
 
-1. Delete the `pages/ajax.htm` and `pages/plugins.htm` files.
-2. Delete the `partials/calcresult.htm` partial file.
-3. Delete the `partials/explain/` directory and contents.
-4. Delete the `content/placeholder/` directory and contents.
+License
+-------
+**Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
 
-## Combining CSS and JavaScript
+Credits
+-------
+* Conversion for OctoberCMS: **József Tamás Herczeg**
+* Design and development: [JoomShaper](http://www.joomshaper.com/)
+* Original release distributed by: [ShapeBootstrap](http://shapebootstrap.net/)
 
-This theme doesn't combine assets for performance reasons. To combine the stylesheets, replace the following lines in the default layout. When combining with this theme, we recommend enabling the config `enableAssetDeepHashing` in the file **config/cms.php**.
+About OctoberCMS Briefly
+------------------------
+OctoberCMS is a free, open source, lightweight & extensible content management system (CMS) based on the [Laravel PHP Framework](http://laravel.com/) for building websites.
 
-Uncombined stylesheets:
-
-    <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
-
-Combined stylesheets:
-
-    <link href="{{ [
-        '@framework.extras',
-        'assets/less/vendor.less',
-        'assets/less/theme.less'
-    ]|theme }}" rel="stylesheet">
-
-> **Note**: October also includes an SCSS compiler, if you prefer.
-
-Uncombined JavaScript:
-
-    <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-    <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-    <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
-    {% framework extras %}
-
-Combined JavaScript:
-
-    <script src="{{ [
-        '@jquery',
-        '@framework',
-        '@framework.extras',
-        'assets/vendor/bootstrap.js',
-        'assets/javascript/app.js'
-    ]|theme }}"></script>
-
-> **Important**: Make sure you keep the `{% styles %}` and `{% scripts %}` placeholder tags as these are used by plugins for injecting assets.
+If you would like to learn more, visit the [OctoberCMS website](http://octobercms.com/).
